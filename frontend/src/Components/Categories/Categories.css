@@ -1,0 +1,170 @@
+.categories-section {
+    text-align: left;
+    padding: 30px 20px;
+    margin-top: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categories-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #3D3D3D;
+}
+
+.categories-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.categories-title::before {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 187px;
+    height: 3px;
+    background-color: orange;
+}
+
+.categories-subtitle {
+    font-size: 18px;
+    color: #7a7a7a;
+    margin-bottom: 30px;
+}
+
+.categories-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.categories-list {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    scroll-snap-type: x mandatory;
+}
+
+.category-card {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(90% / 5 + 2px);
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+}
+
+.category-img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    display: block;
+    align-self: center;
+}
+
+.category-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.scroll-btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.scroll-btn {
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.left-btn:hover {
+    background-color: #ffb400;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.right-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.right-btn:hover {
+    background-color: #ffb400;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.scooter-img {
+    position: absolute;
+    top: -250px;
+    left: 0;
+    width: 130px;
+    z-index: 1;
+    animation: bikeRide 10s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes bikeRide {
+    0% {
+        left: 0%;
+        transform: scaleX(1);
+    }
+    45% {
+        left: 90%;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 90%;
+        transform: scaleX(-1);
+    }
+    95% {
+        left: 0%;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 0%;
+        transform: scaleX(1);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
