@@ -33,8 +33,8 @@ Make sure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/amitk2003/MealMonkey.git
-   cd MealMonkey
+   git clone https://github.com/amitk2003/Meal-Monkey.git
+   cd Meal-Monkey
    ```
 2. **Install backend packages**
    ```bash
@@ -67,7 +67,7 @@ Make sure you have the following installed:
 
 ## Contributors
 ```
-FDFED-Project Group 37
+
 
 Hrishikesh Dongre      (S20220010083)
 Sahil Kasare           (S20220010191)
